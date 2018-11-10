@@ -1,0 +1,47 @@
+section
+  section
+    h2.title React
+
+  section
+    h3.title Definição
+    blockquote.fragment.
+      Uma BIBLIOTECA criada em javascript para a criação de interface de usuários
+
+  section
+    img(src="img/cesar-faber-famosao.png")
+
+  section
+    img(src="img/dont-be-a-dick.gif")
+
+  section
+    h3.title Declarativa
+    br
+    ul.fragment
+      li Torna realmente fácil a criação UIs.
+      li Torna seu código mais fácil e legível
+
+  section
+    h3.title Baseado em componentes
+    ul.fragment
+      li Componentes encapsulados podem ser reutilizados em toda a sua aplicação
+      li Componentes escritos em javascript
+      li Utiliza 100% do poder o JS
+
+  section
+    h3.title Exemplo
+    pre
+      code.javascript.
+        class HelloMessage extends React.Component {
+          render() {
+            return (
+              <div>
+                Hello {this.props.name}
+              </div>
+            );
+          }
+        }
+
+        ReactDOM.render(
+          <HelloMessage name="Taylor" />,
+          mountNode
+        );
